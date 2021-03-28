@@ -1,0 +1,17 @@
+nav {
+  background-color: black;
+  position: absolute;
+  width: 80px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows:74px 74px 74px 74px;
+  grid-gap: 80px;
+}
+
+i {
+  color: white;
+  margin-top: 80px;
+  position: relative;
+  padding: 10px;
+  font-size: 1.2rem;
+}
