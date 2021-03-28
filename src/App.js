@@ -1,10 +1,15 @@
 import './App.css';
-import Sidebar from './Components/Sidebar'
+import Sidebar from './Components/Sidebar';
+import Board from './Components/Board';
+import {StateProvider} from './Context.js';
 
 function App() {
   return (
     <div className="App">
-      <Sidebar/>
+      <StateProvider>
+        <Sidebar/>
+        <Board/>
+      </StateProvider>
     </div>
   );
 }
