@@ -4,10 +4,11 @@ function Sidebar() {
   return(
     <div className="sidebar">
       <nav>
-        <i class="fas fa-pencil-ruler"></i>
-        <i class="fas fa-palette"></i>
-        <i class="fas fa-eraser"></i>
-        <i class="fas fa-eraser"></i>
+        <div id="hamburger"><i className="fas fa-bars"></i></div>
+          <i className="fas fa-pencil-alt"></i>
+          <i className="fas fa-palette"></i>
+          <i className="fas fa-eraser"></i>
+          <i className="fas fa-shapes"></i>
       </nav>
     </div>
   )

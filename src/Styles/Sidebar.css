@@ -1,17 +1,22 @@
 nav {
   background-color: black;
   position: absolute;
-  width: 80px;
+  width: 45px;
   height: 100vh;
   display: grid;
-  grid-template-rows:74px 74px 74px 74px;
-  grid-gap: 80px;
+  grid-template-rows:74px 74px 74px 74px 74px 74px;
+  grid-gap: 40px;
+}
+
+#hamburger i{
+  margin-top: 60px;
+  font-size: 1.4rem;
 }
 
 i {
   color: white;
-  margin-top: 80px;
+  margin-top: 100px;
   position: relative;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
