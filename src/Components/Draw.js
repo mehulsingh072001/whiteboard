@@ -18,7 +18,7 @@ const Draw = () => {
     const context = canvas.getContext('2d')
     context.scale(2,2)
     context.lineCap="round"
-    context.lineWidth = 5
+    context.lineWidth = 2
     contextRef.current = context;
 
   }, [])
@@ -52,7 +52,7 @@ const Draw = () => {
 
   return(
     <div>
-      <canvas onMouseDown={startDrawing} onMouseMove={draw} onMouseUp={finishDrawing} ref={canvasRef}/>
+      <canvas  onMouseDown={startDrawing} onMouseMove={draw} onMouseUp={finishDrawing} ref={canvasRef}/>
     </div>
   )
 }
