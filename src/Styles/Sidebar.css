@@ -6,6 +6,7 @@ nav {
   display: grid;
   grid-template-rows:74px 74px 74px 74px 74px 74px;
   grid-gap: 40px;
+  z-index: 29;
 }
 
 #hamburger i{

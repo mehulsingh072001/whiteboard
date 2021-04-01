@@ -1,17 +1,18 @@
-import React, { useState, useContext } from 'react'
-import { Context } from '../Context.js';
+const Eraser = () => {
+    const { erase } = useContext(Context)
+    const canvasRef = useRef(null);
 
-const Erase = () => {
-  const{ erase } = useContext(Context)
+    const clearCanvas = () => {
+      const canvas = canvasRef.current;
+      const context = canvas.getContext("2d")
 
-  if(erase[0] === true) {
+      if(erase[1](true)){
+        context.clearRect(0, 0, window.innerWidth * 2, window.innerHeight * 2);
+      }
+    }
+
     return(
-      <h1>True</h1>
     )
-  }
-  return (
-    <h1>False</h1>
-  )
 }
 
-export default Erase;
+export default Eraser

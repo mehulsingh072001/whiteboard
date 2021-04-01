@@ -1,6 +1,6 @@
-import React, {useState, useContext } from 'react';
-import '../Styles/Sidebar.css'
+import React, {useState, useContext, useRef } from 'react';
 import { Context } from '../Context.js';
+import '../Styles/Sidebar.css'
 
 function Sidebar() {
   const { draw, erase } = useContext(Context)
@@ -10,14 +10,19 @@ function Sidebar() {
   }
 
   const eT = () => {
-    erase[1](!erase[0])
+    erase[1](true)
   }
+
+  const eT2 = () => {
+    erase[1](false)
+  }
+
   return(
     <div className="sidebar">
       <nav>
         <div id="hamburger"><i className="fas fa-bars"></i></div>
           <i className="fas fa-pencil-alt" onClick={dT}></i>
-          <i className="fas fa-eraser" onClick={eT}></i>
+          <i className="fas fa-eraser" onMouseDown={eT} onMouseUp={eT2}></i>
           <i className="fas fa-palette"></i>
           <i className="fas fa-shapes"></i>
       </nav>
