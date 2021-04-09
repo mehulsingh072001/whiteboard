@@ -1,6 +1,12 @@
 * {
-  margin: 0%;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
 }

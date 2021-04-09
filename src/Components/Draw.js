@@ -20,7 +20,6 @@ const Draw = () => {
     context.lineCap="round"
     context.lineWidth = 2
     contextRef.current = context;
-
   }, [])
 
   const startDrawing = ({nativeEvent}) => {
@@ -29,6 +28,7 @@ const Draw = () => {
     contextRef.current.moveTo(offsetX, offsetY)
     contextRef.current.strokeStyle = 'black'
     setIsDrawing(true)
+
   }
 
   const draw = ({nativeEvent}) => {

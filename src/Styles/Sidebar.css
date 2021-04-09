@@ -1,18 +1,15 @@
 nav {
   background-color: black;
+  margin: 0;
   position: absolute;
   width: 45px;
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-rows:74px 74px 74px 74px 74px 74px;
   grid-gap: 40px;
   z-index: 29;
 }
 
-#hamburger i{
-  margin-top: 60px;
-  font-size: 1.4rem;
-}
 
 i {
   color: white;
@@ -21,4 +18,29 @@ i {
   padding: 10px;
   cursor: pointer;
   font-size: 1.1rem;
+}
+
+#circle {
+  font-size: 1.6rem;
+}
+
+.line{
+  margin-top: 100px;
+  position: relative;
+  padding: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  width: 20%;
+  transform: rotate(45deg);
+}
+
+.rect{
+  margin-top: 100px;
+  position: relative;
+  padding: 7px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: 2px solid white;
+  width: 20%;
 }
